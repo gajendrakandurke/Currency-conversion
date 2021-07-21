@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stylight Frontend Developer Task</title>
+    <!-- Put your own styles into this file. -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="flex-main-container">
+        <div class="flex-main-item-header">Stylight Currency Converter</div>
+        <div class="flex-main-item-contain">
+            <div class="container">
+                <div class="container-item">
+                    <div class="container-item-sub">
+                        <span id="fromCurrencySymbol">€</span>
+                        <input id="fromAmount" type="number" value="0" min="0" />
+                        <select id="fromSelectCurrency" onchange="fromSelectCurrencyChangeHandler(event)">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="container-item-swap">
+                    <img onclick="currencySwapHandler()" class="switch-img" src="assets/switch.svg"
+                        style="background-color: #29ceb5;" />
+                </div>
+
+                <div class="container-item">
+                    <div class="container-item-sub">
+                        <span id="toCurrencySymbol">€</span>
+                        <input id="toAmount" class="toAmount" type="text" value="0" readonly />
+                        <select id="toSelectCurrency" onchange="toSelectCurrencyChangeHandler()">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

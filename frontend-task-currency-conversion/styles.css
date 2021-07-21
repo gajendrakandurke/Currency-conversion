@@ -1,0 +1,110 @@
+/* Your styles go here. */
+
+html, body {
+    height: 90%;
+    background: #ECECEC;
+}
+
+html body:last-child {
+    font-family: "helvetica";
+}
+
+.flex-main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.flex-main-item-header {
+    background: #29ceb5;
+    color: #FfFfff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding: 20px 30px 25px;
+    text-align: left;
+}
+
+.flex-main-item-contain {  
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.switch-img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+
+.container {
+    margin: 5em;
+    display: flex;
+    flex-direction: row;   
+    padding: 5px;  
+    justify-content: space-around;   
+}
+
+.container-item {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #FfFfff;
+    border-radius: 10px;
+    height: 100px;
+    width: 300px; 
+}
+
+.container-item-swap {
+    align-self: center;
+    margin: 10px 10px 10px 10px;
+}
+
+select {
+    color: #29ceb5;
+    font-weight: bold;
+    border: none;  
+    font-size: 24px;
+}
+
+span{text-align: right;}
+
+input, span {
+    border: none;   
+    font-size: 24px;  
+    margin: 5px;
+    width: 7em;
+}
+
+span, .toAmount{
+    color: #bdbdbd;
+}
+
+input:focus, select:focus {
+    outline: none !important;
+}
+
+.container-item-sub {
+    margin: 30px 1px 5px 2px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+} 
+
+@media screen and (max-width: 980px) {
+    .container {
+        flex-direction: column;
+        height: 350px;
+        align-items: center;
+    }
+    .container-item-swap {
+        transform: rotate(90deg);
+    }   
+}
+
+@media screen and (max-width: 800px) {
+    .flex-main-item-header {
+        font-size: 15px;
+    } 
+} 
